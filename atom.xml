@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="darktemple9.github.io/"/>
-  <updated>2018-02-13T13:41:31.000Z</updated>
+  <updated>2018-02-14T00:50:20.000Z</updated>
   <id>darktemple9.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些hexo建站要点</title>
+    <link href="darktemple9.github.io/2018/02/14/%E4%B8%80%E4%BA%9Bhexo%E5%BB%BA%E7%AB%99%E8%A6%81%E7%82%B9/"/>
+    <id>darktemple9.github.io/2018/02/14/一些hexo建站要点/</id>
+    <published>2018-02-14T00:18:18.000Z</published>
+    <updated>2018-02-14T00:50:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>​        今天情人节，也是大年29，趁着这段时间不忙给已经废弃的blog换个theme，简单记录下。</p><p>​        hexo 和 github搭建blog网上很多资料，这里只记录一些问题。下面是一些常见命令：</p><pre><code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir my_blog</span><br><span class="line">hexo init //初始化</span><br><span class="line">hexo d   //部署</span><br><span class="line">hexo g  //生成</span><br><span class="line">hexo s //启动服务预览</span><br><span class="line">hexo clean //清空db和public文件夹</span><br></pre></td></tr></table></figure></code></pre><p>hexo d的时候经常碰到Error Deployer not found：github的问题。问题在于没有安装相应的程序：<a href="https://github.com/hexojs/hexo/issues/1040" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/1040</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>hexo s预览没有问题，但是hexo d部署不到github上去，这主要是_config.yml中deploy没有配置好：repo可以从github中clone with ssh中获取</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:xxx/xxx.github.io.git</span><br></pre></td></tr></table></figure><p>更换theme最简单的做法就是git clone theme主题后复制到themes下，然后修改my_blog下的_config.yml中theme属性，这里我用的是indigo</p><p><a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">https://github.com/yscoder/hexo-theme-indigo/wiki</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: hexo-theme-indigo</span><br></pre></td></tr></table></figure><p>indigo中默认是没有开启tags和categories的，找了半天才明白需要按照上面链接的wiki手工设置，具体在issue中也有回答。</p><p><a href="https://github.com/yscoder/hexo-theme-indigo/issues/154" target="_blank" rel="noopener">https://github.com/yscoder/hexo-theme-indigo/issues/154</a></p><p>搭好之后修改下my_blog/_config.yml中一些基本显示信息就OK了。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​        今天情人节，也是大年29，趁着这段时间不忙给已经废弃的blog换个theme，简单记录下。&lt;/p&gt;
+&lt;p&gt;​        hexo 和 github搭建blog网上很多资料，这里只记录一些问题。下面是一些常见命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;fig
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="darktemple9.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>直销银行，生存更重要</title>
