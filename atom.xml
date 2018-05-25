@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="darktemple9.github.io/"/>
-  <updated>2018-05-23T10:50:35.000Z</updated>
+  <updated>2018-05-25T03:13:23.000Z</updated>
   <id>darktemple9.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>目录穿越几则</title>
+    <link href="darktemple9.github.io/2018/05/25/%E7%9B%AE%E5%BD%95%E7%A9%BF%E8%B6%8A%E5%87%A0%E5%88%99/"/>
+    <id>darktemple9.github.io/2018/05/25/目录穿越几则/</id>
+    <published>2018-05-25T01:53:53.000Z</published>
+    <updated>2018-05-25T03:13:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。</p><p>URL编码和ASCII字符</p><p>%2F       /</p><p>%20      空格</p><p>%3F      ？</p><p>命令行下，curl 发送URL请求</p><p>Burpsuite Repeater模块发送各种请求Payload</p><h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>uWSGI PHP目录穿越漏洞 （CVE-2018-7490）</p><p>影响版本：2.0.17之前</p><p>uWSGI是一款Web应用程序服务器，在2.0.17之前没有正确处理DOCUMENT_ROOT导致用户可以利用../来跨域目录，读取DOCUMENT_ROOT目录以外的文件。</p><p>直接浏览器访问：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://your-ip:8080/..%2f..%2f..%2f..%2f..%2fetc/passwd</span><br></pre></td></tr></table></figure><p>ElasticSearch 目录穿越漏洞（CVE-2015-5531）</p><p><a href="http://vulhub.org/#/environments/elasticsearch/CVE-2015-5531/" target="_blank" rel="noopener">http://vulhub.org/#/environments/elasticsearch/CVE-2015-5531/</a></p><p><a href="https://www.exploit-db.com/exploits/38383/" target="_blank" rel="noopener">https://www.exploit-db.com/exploits/38383/</a></p><p>影响版本：v1.6.1以下</p><p>ElasticSearch是一个基于分布式多用户能力的全文搜索引擎，基于Restful web接口。支持通过HTTP使用JSON进行数据索引。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://your-ip:9200/_snapshot/test/backdata%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd</span><br></pre></td></tr></table></figure><p>ZipperDown IOS目录穿越</p><p>最近几天比较火的漏洞，算是ZipArchive包没限制../的一个问题吧。目前还没看到POC，持续关注中。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h1&gt;&lt;p&gt;目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。&lt;/p&gt;
+&lt;p&gt;URL编码和ASCII字符&lt;
+      
+    
+    </summary>
+    
+      <category term="Security" scheme="darktemple9.github.io/categories/Security/"/>
+    
+    
+      <category term="Web Security" scheme="darktemple9.github.io/tags/Web-Security/"/>
+    
+  </entry>
   
   <entry>
     <title>dns域传送漏洞</title>

